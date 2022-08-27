@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    background: #cfc4a7;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .welcome-section {
+    height: 100vh;
+    background-image: url(https://snipboard.io/cbATwW.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome-section h1, .welcome-section p {
+    background-color: rgba(56, 57, 59, 0.5);
+    padding: 0 10px;
+    position: relative;
+    animation: heading 3s;
+  }
+
+  .welcome-section p {
+    margin-top: 10px;
+    font-style: italic;
+    position: relative;
+  }
+
+  @keyframes heading {
+    0% {
+        left: -1000px;
+        opacity: 0%;
+    }
+    100% {
+        left: 0;
+        opacity: 100%;
+    }
+  }
+  
+  nav {
+    height: 90px;
+    width: 100%;
+    background-color:#383631;
+    position: fixed;
+    z-index: 1;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 450px;
+    margin: 0 2rem 0 auto;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: burlywood;
+  }
+
+  .project-section h1 {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    color: #26231e;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  @media (max-width:1150px) {
+    .project-grid {
+    grid-template-columns: auto;
+    }
+  }
+
+  .project-tile {
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px black;
+    width: 500px;
+  }
+
+  img { 
+    width: 500px;
+    height:500px; 
+    object-fit: cover;
+    display: block;
+  }
+
+  .project-tile p {
+    background: #26231e;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .project-tile:hover {
+    color: burlywood;
+  }
+
+  .btn {
+    text-decoration: none;
+    display: block;
+    margin: 5rem auto;
+    width: 12rem;
+    padding: 1rem 2rem;
+    background-color: #26231e;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+  }
+
+  .btn:hover {
+      color: burlywood;
+      transform: scale(1.1);
+  }
+
+  .contact {
+    height: 70vh;
+    background-color: #52504f;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 5px;
+    margin-top: 4rem;
+    height: calc(100%-90px);
+  }
+
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0 4rem 0;
+  }
+
+  .contact-header h1 {
+    font-size: 4rem;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .contact-link {
+    color: white;
+    padding: 1rem 2rem;
+    text-shadow: 1px 2px 5px black;
+    transition: transform 0.3s;
+  }
+
+  .contact-link:hover {
+    color: burlywood;
+    transform: scale(1.1)
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  footer {
+    height: 90px;
+    font-size: 20px;
+    background-color: burlywood;
+    color: black;
+  }
+  
+  
+
+ 
+
+  
