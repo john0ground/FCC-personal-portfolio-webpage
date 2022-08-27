@@ -1,0 +1,47 @@
+body {
+    font-family: tahoma;
+    color: #e8e4da;
+    background-image: url(https://snipboard.io/N4j1DW.jpg);
+    background-size: cover;
+    font-size: 20px;
+  }
+  
+  section, figcaption, .bottom-p {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+   
+   img {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    max-width: 100%
+    }
+  
+  figcaption {
+    margin-bottom: 60px;
+  }
+  
+    h1 {
+      text-align: center;
+      font-family: times-new-roman;
+      background-color: rgba(0, 0, 0, 40%)
+    }
+  
+    li {
+      margin-bottom: 30px;
+    }
+  
+    .bottom-p {
+      margin-top: 60px;
+    }
+  
+    a {
+      color: white;
+      font-weight: bold;
+    }
+  
+    a:hover {
+      background-color: white;
+      color: black;
+    }

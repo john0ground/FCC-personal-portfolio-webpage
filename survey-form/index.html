@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+ <body>
+   <h1 id="title">Travel Survey Form</h1>
+   <strong><p id="description">Please state your travel preferences<p/></strong>
+   
+   <hr>
+   <form id="survey-form">
+     <label id="name-label" for="name">Name<label>
+     <input type="text" id="name" name="name" placeholder="Chris Camp" required>
+    
+     <label id="email-label" for="email">Email</label>
+     <input type="email" id="email" name="email" placeholder="chriscamp@gmail.com" required>
+     
+     <label id="number-label" for="age">Age</label>   
+    <input type="number" id="number" min="18" max="60" name="age" placeholder="18-60">
+
+     <label for="gender">Gender</label>
+     <select id="dropdown" name="gender">  
+       <option value="">(select one)</option> 
+       <option value="1">Male</option>
+       <option value="2">Female</option>
+     </select>
+
+   <hr>
+     <p><strong>What is the purpose of your travel?</strong></p>
+     <label><input 
+       type="radio"
+       name="form-role"
+       value="Education/Courses">
+       Education/Courses
+     </label>
+     <label><input
+       type="radio"
+       name="form-role"
+       value="vacation">
+       Vacation
+     </label>
+     <label><input
+       type="radio"
+       name="form-role"
+       value="Business/Meeting">
+       Business/Meeting
+     </label>
+     <label><input
+       type="radio"
+       name="form-role"
+       value="Sports/Events">
+       Sports/Events
+     </label>
+      <label><input
+       type="radio"
+       name="form-role"
+       value="Friends/Relatives">
+       Visit Friends/Relatives
+     </label>
+      <label><input
+       type="radio"
+       name="form-role"
+       value="Sport Tournaments/Events">
+       Sport Tournaments/Events
+     </label>
+
+   <hr>
+     <p><strong>Places you would likely travel:</strong></p>
+     <label><input
+       type="checkbox"
+       name="form-purpose"
+       value="asia">
+       Asia
+     </label>
+      <label><input
+       type="checkbox"
+       name="form-purpose"
+       value="australia">
+       Australia
+     </label>
+      <label><input
+       type="checkbox"
+       name="form-purpose"
+       value="europe">
+       Europe
+     </label>
+      <label><input
+       type="checkbox"
+       name="form-purpose"
+       value="africa">
+       Africa
+     </label>
+      <label><input
+       type="checkbox"
+       name="form-purpose"
+       value="north-america">
+       North America
+     </label>
+      <label><input
+       type="checkbox"
+       name="form-purpose"
+       value="south-america">
+       South America
+     </label>
+
+   <hr>
+     <label>Things you're most excited with in your trip:
+       <textarea name="travel-info" rows="3" cols="30" placeholder="Foods, Museums..."></textarea>
+     </label>
+
+     <button type="submit" id="submit">Submit</button>
+
+ </body>
+</html>
